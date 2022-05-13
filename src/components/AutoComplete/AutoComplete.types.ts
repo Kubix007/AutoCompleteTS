@@ -1,3 +1,5 @@
+import { TechnologyData } from "../../shared/types";
+
 export interface Props {
-    technologies: {id: string, name: string};
+    technologies: TechnologyData[];
 }

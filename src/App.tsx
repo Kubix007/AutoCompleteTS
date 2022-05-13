@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { TechnologyData } from "./shared/types";
+import AutoComplete from "./components/AutoComplete";
 import FetchData from "./components/FetchData";
 import "./App.css";
 
@@ -12,11 +13,11 @@ function App() {
 
   return (
     <div className="App">
-      <ul>
-        {technologies.map((item) => (
-          <li>{item.name}</li>
-        ))}
-      </ul>
+      {technologies ? (
+        <AutoComplete technologies={technologies} />
+      ) : (
+        <div data-testid="loading">Ładowanie...</div>
+      )}
     </div>
   );
 }
