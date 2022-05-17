@@ -95,7 +95,7 @@ const AutoComplete = ({ technologies }: Types.Props) => {
 
   return (
     <div style={{ width: "100%" }}>
-      <label htmlFor="">Podaj nazwę technologii:</label>
+      <label style={{ fontSize: "1.5rem" }}>Podaj nazwę technologii:</label>
       <RootDiv>
         {tags.map((tag, index) => (
           <TagsDiv key={index}>
@@ -108,6 +108,7 @@ const AutoComplete = ({ technologies }: Types.Props) => {
           value={inputValue}
           onChange={handleChange}
           onKeyDown={handleKeyDown}
+          autoFocus
         />
       </RootDiv>
       {filtredSuggestionsList && filtredSuggestionsList.length ? (
