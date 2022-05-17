@@ -8,6 +8,7 @@ const FetchData = (
   return Repository.getAll().then(
     (data: AxiosResponse<TechnologyData[]>) => {
       response(data.data);
+      console.log(data.data);
     },
     (error) => {
       console.log(error);

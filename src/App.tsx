@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div className="App">
-      {technologies ? (
+      {technologies.length > 0 ? (
         <AutoComplete technologies={technologies} />
       ) : (
         <div data-testid="loading">Ładowanie...</div>
