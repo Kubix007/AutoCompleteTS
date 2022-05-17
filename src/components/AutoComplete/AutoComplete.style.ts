@@ -37,7 +37,7 @@ export const TagsDiv = styled.div`
 export const RootDiv = styled.div`
     display: flex;
     border: 2px solid #e6e6e6;    
-    color: black
+    color: black;
 `
 
 export const ErrorInfo = styled.div`

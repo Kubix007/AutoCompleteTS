@@ -94,7 +94,8 @@ const AutoComplete = ({ technologies }: Types.Props) => {
   };
 
   return (
-    <div>
+    <div style={{ width: "100%" }}>
+      <label htmlFor="">Podaj nazwę technologii:</label>
       <RootDiv>
         {tags.map((tag, index) => (
           <TagsDiv key={index}>
