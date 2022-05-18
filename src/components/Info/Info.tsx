@@ -4,9 +4,7 @@ const Info = () => {
   return (
     <Div>
       <Paragraph>Autocomplete Komponent</Paragraph>
-      <Span>
-        Może posłużyć do filtrowania, opcje zapisywane są w postaci tagów.
-      </Span>
+      <Span>Na podstawie wyszukiwań tworzone są tagi.</Span>
     </Div>
   );
 };
